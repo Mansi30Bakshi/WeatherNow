@@ -86,9 +86,6 @@ WeatherNow/
 │  └─ index.js
 ├─ package.json
 └─ README.md
-📸 Screenshot
-Example: App displaying weather for Noida with dynamic background and icons.
-<img width="920" height="762" alt="image" src="https://github.com/user-attachments/assets/a41cfda0-8c8e-45bc-aadd-053ab9ed1889" />
 
 
 🔮 Future Improvements
