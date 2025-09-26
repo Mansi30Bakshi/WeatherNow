@@ -69,7 +69,7 @@ Copy code
 http://localhost:5173
 🌐 Live Demo
 The application is deployed and accessible online:
-https://x3nqvp-5173.csb.app/
+https://weather-now-sage-seven.vercel.app/
 
 📂 Folder Structure
 pgsql
