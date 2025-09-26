@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  transition: background 0.5s ease;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+}
+h2{
+  font-size:2rem;
+  color:#345;
+  margin-top: 2%;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.search-box input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-box button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #4dabf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #1c7ed6;
+}
+
+.weather-card {
+  background-color: white;
+  padding: 1.1rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  max-width: 400px;
+  margin-left: 7%;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+.weather-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card p {
+  font-size: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.errMsg-message {
+  margin-top: 1.5rem;
+  color: #d00000;
+  background-color: #ffe3e3;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #4dabf7;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-top: 1.5rem;
+  margin-left: 45%;
+  /* align-items: center; */
+}
+.flashcard {
+  background: rgba(255, 255, 255, 0.25); /* glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top : 7%;
+}
+.flashcard:hover{
+  transform:translateY(15px);
+}
+.animated-heading span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.05s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .flashcard {
+    padding: 1.5rem;
+    margin-top: 5%;
+  }
+
+  .weather-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .search-box input, .search-box button {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .flashcard {
+    padding: 1rem;
+    margin-top: 4%;
+  }
+}
