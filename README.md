@@ -69,7 +69,7 @@ Copy code
 http://localhost:5173
 🌐 Live Demo
 The application is deployed and accessible online:
-👉 WeatherNow Live Demo
+https://x3nqvp-5173.csb.app/
 
 📂 Folder Structure
 pgsql
@@ -88,7 +88,8 @@ WeatherNow/
 └─ README.md
 📸 Screenshot
 Example: App displaying weather for Noida with dynamic background and icons.
-(Insert screenshot here)
+<img width="920" height="762" alt="image" src="https://github.com/user-attachments/assets/a41cfda0-8c8e-45bc-aadd-053ab9ed1889" />
+
 
 🔮 Future Improvements
 Add forecast for the next few days
